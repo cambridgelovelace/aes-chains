@@ -1,0 +1,52 @@
+. CHANGE-RADIX
+. Given a number x and base b, outputs each of the digits of x in base b,
+. in reverse order.
+
+. Constants
+N000 0 
+N001 1
+
+. x is put in store 009 and b is put in store 010.
+N009 20151210
+N010 3
+
+. We need to keep going until the value of Store 009 is zero.
+. Set the run-up lever if it's greater than zero.
+-
+L000
+L009
+(?
+
+. Start processing digits, starting with the least significant.
+/
+L009 
+L010
+. Quotient:
+S003'
+. Remainder:
+S004
+
+. Decrement N009 (x) by the remainder before dividing by the base.
+- 
+L009
+L004
+/
+L009
+L010
+S009'
+
+. Print out the bit (the result of adding it to zero).
++
+L000
+L004
+P
+
+. Set the run-up lever if needed for the next iteration.
+-
+L000
+L009
+)
+
+. We've finished. Let's ring the bell and halt the Engine.
+B
+H
