@@ -1,6 +1,6 @@
 # aes-chains
 
-At the Hackathon we worked on several chains of programming cards for the [Analytical Engine simulator](http://www.fourmilab.ch/babbage/cards.html Analytical Engine simulator). Some of these chains appear on the [event wiki](https://github.com/cambridgelovelace/cambridgelovelace.github.io/wiki), but some of us expressed an interest in working on larger programs, or tools to allow their expression at a higher level. This repository was set up to help coordinate this work.
+At the [Hackathon](http://www.cambridgelovelace.org/), six of us worked on several chains of programming cards for the [Analytical Engine simulator](http://www.fourmilab.ch/babbage/cards.html Analytical Engine simulator). Some of these chains appear on the [event wiki](https://github.com/cambridgelovelace/cambridgelovelace.github.io/wiki), but some of us expressed an interest in working on larger programs, or tools to allow their expression at a higher level. This repository was set up to help coordinate this work.
 
 Suggested conventions:
 * Use `.aes` as a file extension.
